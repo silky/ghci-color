@@ -36,7 +36,6 @@ exec "`which ghc`" --interactive ${1+"$@"} 2>&1 |\
          $parenthesis\
          $left_blacket\
          $right_blacket\
-         $double_colon\
          $calc_operators\
          $comment\
          $token\
