@@ -2,7 +2,7 @@
 
 this script colorizes ghci output.
 
-![screenshot](https://raw.github.com/rhysd/ghci-color/master/cap.jpg)
+![screenshot](https://raw.github.com/silky/ghci-color/master/cap2.png)
 
 - initial message
 - fundamental operator `+` `-` `*` `/`
