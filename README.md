@@ -1,6 +1,6 @@
-#Colorize GHCi
+# Colourise GHCi
 
-this script colorizes ghci output.
+this script colourises ghci output.
 
 ![screenshot](https://raw.github.com/silky/ghci-color/master/cap2.png)
 
