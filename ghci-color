@@ -11,6 +11,7 @@ BOLD=`echo '\033[1m'`
 RESET=`echo '\033[0m'`
 
 load_failed="s/^Failed, modules loaded:/$RED&$RESET/;"
+exception="s/Exception:/$RED&$RESET/;"
 load_done="s/done./$GREEN&$RESET/g;"
 double_colon="s/::/$PURPLE&$RESET/g;"
 right_arrow="s/\->/$PURPLE&$RESET/g;"
@@ -29,6 +30,7 @@ exec "`which ghc`" --interactive ${1+"$@"} 2>&1 |\
     sed "$load_failed\
          $load_done\
          $no_instance\
+         $exception\
          $interactive\
          $double_colon\
          $right_arrow\
