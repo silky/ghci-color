@@ -20,7 +20,7 @@ this command is often pre-installed in \*nix OS system.
 
 #Installation
 
-put ghci-color script in $PATH directory and use ghci-color command instead of ghci.
+put `ghci-color` and `protectsed.sh` in your $PATH and use `ghci-color` command instead of ghci.
 
 #LICENSE
 
