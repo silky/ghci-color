@@ -27,7 +27,7 @@ token="s/\`[a-zA-Z0-9+(){}->=@]*'/$BOLD&$RESET/g;"
 comment="s/-- .*/$DARKGRAY&$RESET/g;"
 
 exec "`which ghc`" --interactive ${1+"$@"} 2>&1 |\
-    sed "$load_failed\
+    protecsed.sh "$load_failed\
          $load_done\
          $no_instance\
          $exception\
