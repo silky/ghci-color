@@ -12,6 +12,7 @@ RESET=`echo '\033[0m'`
 
 load_failed="s/^Failed, modules loaded:/$RED&$RESET/;"
 exception="s/Exception:/$RED&$RESET/;"
+warning="s/Warning:/$YELLOW&$RESET/;"
 load_done="s/done./$GREEN&$RESET/g;"
 double_colon="s/::/$PURPLE&$RESET/g;"
 right_arrow="s/\->/$PURPLE&$RESET/g;"
@@ -33,6 +34,7 @@ exec "`which ghc`" --interactive ${1+"$@"} 2>&1 |\
          $exception\
          $interactive\
          $double_colon\
+         $warning\
          $right_arrow\
          $right_arrow2\
          $parenthesis\
